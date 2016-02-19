@@ -1,0 +1,35 @@
+{
+  "name": "dehaa/tutorials",
+  "description": "dehaa/tutorials",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Sefa ŞAHİN",
+      "email": "sefa@dehaa.com"
+    }
+  ],
+  "require": {
+    "illuminate/database": "^5.2",
+    "illuminate/cache": "^5.2",
+    "illuminate/redis": "^5.2",
+    "illuminate/filesystem": "^5.2",
+    "illuminate/config": "^5.2",
+    "vlucas/phpdotenv": "^2.2",
+    "symfony/finder": "^3.0",
+    "illuminate/events": "^5.2",
+    "illuminate/routing": "^5.2",
+    "illuminate/support": "^5.2"
+  },
+  "autoload": {
+    "classmap": [
+      "config/",
+      "controller/",
+      "facade/",
+      "storage/",
+      "service/",
+      "core/",
+      "general/"
+    ]
+  }
+}

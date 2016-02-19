@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+vendor
+composer.lock
+config/production
+.env
+.idea
+db.mwb
+db.mwb.bak
