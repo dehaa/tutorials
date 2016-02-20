@@ -20,11 +20,12 @@ class User
 
 	/**
 	 * Register Contoller
+	 * @return \storage\model\document\Token
 	 */
 	public function register()
 	{
 		$parameters = Request::get(UserModel::getRequiredParameters(ProcessType::REGISTER));
-		UserService::getInstance()
+		return UserService::getInstance()
 			->setParameters($parameters)
 			->register();
 	}

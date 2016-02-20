@@ -5,7 +5,7 @@ if(isset($_GET['controller'])){
     $action = $_GET['action'];
     $controller = "controller\\".$controller;
     $controller = new $controller();
-    $controller->$action() ;
+    echo $controller->$action();
 }else{
     $app = new \core\App();
 }

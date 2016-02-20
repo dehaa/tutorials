@@ -3,6 +3,7 @@ namespace service;
 
 use core\Service;
 use general\library\traitlib\SingletonTrait;
+use general\library\user\Token;
 use storage\model\document\User;
 
 /**
@@ -22,6 +23,11 @@ class UserService extends Service
 			$user->$userParameter = $value;
 		}
 		$user->save();
+		$tokenModel = new \storage\model\document\Token();
+		$tokenModel->token = Token::getInstance()->create();
+		$tokenModel->userId = $user->userId;
+		$tokenModel->save();
+		return $user.$tokenModel;
 	}
 
 	public function login()
