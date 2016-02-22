@@ -1,17 +1,19 @@
 <?php
 namespace storage\model\document;
+
 use core\Model;
 use general\enum\Connection;
 use general\enum\Table;
 
 /**
- * Class Process
+ * Class DocumentCategoryRelation
  * @package storage\model\document
  * @author sefa@dehaa.com
  */
-class Process extends Model
+class DocumentCategoryRelation extends Model
 {
 	protected $connection = Connection::TUTORIALS;
-	protected $table = Table::PROCESS;
-	protected $primaryKey = "processId";
+	protected $table = Table::DOCUMENT_CATEGORY_RELATION;
+	protected $primaryKey = "categoryId";
+	public $timestamps = false;
 }

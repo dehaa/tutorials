@@ -5,7 +5,6 @@ namespace core;
 use Dotenv\Dotenv;
 use general\library\traitlib\SingletonTrait;
 use Illuminate\Container\Container;
-use storage\model\schema\Schema;
 
 class App extends Container
 {
@@ -73,7 +72,7 @@ class App extends Container
     }
 
 	private function setupDatabase(){
-		$database    = new Schema();
+		$database    = new DB();
 		$connections = $this->config->get('database');
 		foreach ($connections as $name => $config) {
 			$database->addConnection($config, $name);

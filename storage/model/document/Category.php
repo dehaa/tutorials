@@ -3,6 +3,7 @@
 namespace storage\model\document;
 
 use core\Model;
+use general\enum\Connection;
 use general\enum\Table;
 
 /**

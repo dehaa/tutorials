@@ -1,8 +1,9 @@
 <?php
 
 namespace controller;
+use core\DB;
+use general\enum\Connection;
 use service\DocumentService;
-use storage\model\schema\Schema;
 
 /**
  * @author sefa@dehaa.com
@@ -10,10 +11,9 @@ use storage\model\schema\Schema;
 class Document
 {
 	public function get(){
-		var_dump($key = md5(microtime().rand()));
-		foreach (DocumentService::getInstance()->getAll() as $item) {
-			echo $item->documentTitle."<br />";
-		}
-		echo DocumentService::getInstance()->user();
+		DB::connection(Connection::TUTORIALS)->enableQueryLog();
+		echo DocumentService::getInstance()->categories();
+		//DocumentService::getInstance()->addDocument();
+		var_dump(DB::connection(Connection::TUTORIALS)->getQueryLog());
 	}
 }

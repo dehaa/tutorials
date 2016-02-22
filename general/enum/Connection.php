@@ -2,7 +2,12 @@
 namespace general\enum;
 
 
+/**
+ * Class Connection
+ * @package general\enum
+ */
 class Connection
 {
-    const TUTORIALS = "dehaa_tutorials";
+	const MAIN = "dehaa_main";
+	const TUTORIALS = "dehaa_tutorials";
 }

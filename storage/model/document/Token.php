@@ -12,7 +12,7 @@ use general\enum\Table;
  */
 class Token extends Model
 {
-	protected $connection = Connection::TUTORIALS;
+	protected $connection = Connection::MAIN;
 	protected $table = Table::TOKEN;
 
 }

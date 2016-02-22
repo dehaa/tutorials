@@ -11,7 +11,7 @@ use general\enum\Table;
  */
 class User extends Model
 {
-	protected $connection = Connection::TUTORIALS;
+	protected $connection = Connection::MAIN;
 	protected $table = Table::USER;
 	protected $primaryKey = "userId";
 

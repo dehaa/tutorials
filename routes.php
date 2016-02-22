@@ -1,10 +1,9 @@
 <?php
 
-$app['router']->get('/', function() {
-    // Because 'Hello, World!' is too mainstream
-    return 'Hello2';
+$app['router']->get('/', function () {
+	 require("facade/index.php");
 });
-$app['router']->get('/url1/url2', function() {
-    // Because 'Hello, World!' is too mainstream
-    return 'Hello';
+$app['router']->get('/url2', function () {
+	$content = require "facade/index.php";
+	return $content;
 });
