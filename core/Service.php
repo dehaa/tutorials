@@ -7,7 +7,7 @@ use general\library\traitlib\SingletonTrait;
  * @package core
  * @author sefa@dehaa.com
  */
-class Service
+abstract class Service
 {
 	use SingletonTrait;
 
@@ -21,4 +21,5 @@ class Service
 		$this->parameters = $parameters;
 		return $this;
 	}
+
 }

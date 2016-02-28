@@ -34,4 +34,12 @@ class UserService extends Service
 	{
 
 	}
+
+	public function updateProfile(){
+
+	}
+
+	public function listUsers(){
+
+	}
 }

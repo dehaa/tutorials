@@ -1,6 +1,7 @@
 <?php
 namespace controller;
 
+use core\Controller;
 use general\enum\ProcessType;
 use general\library\request\Request;
 use service\UserService;
@@ -11,7 +12,7 @@ use storage\model\document\User as UserModel;
  * @package controller
  * @author sefa@dehaa.com
  */
-class User
+class User extends Controller
 {
 	public function login()
 	{
@@ -31,4 +32,23 @@ class User
 	}
 
 
+	public function add()
+	{
+		// TODO: Implement add() method.
+	}
+
+	public function get()
+	{
+		// TODO: Implement get() method.
+	}
+
+	public function update()
+	{
+		// TODO: Implement update() method.
+	}
+
+	public function remove()
+	{
+		// TODO: Implement remove() method.
+	}
 }

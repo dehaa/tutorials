@@ -10,8 +10,8 @@ class ProcessType
 	const REGISTER = 1;
 	const LOGIN = 2;
 	const LOGOUT = 3;
-	const READ = 4;
-	const INSERT = 5;
-	const UPDATE = 6;
+	const DOCUMENT_ADD = 4;
+	const DOCUMENT_UPDATE = 5;
+	const DOCUMENT_DELETE = 6;
 	const DELETE = 7;
 }
